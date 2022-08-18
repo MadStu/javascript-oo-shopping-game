@@ -314,8 +314,8 @@ function init(data) {
         let totalBill = tBill;
         const prId = generateProductId();
         let product = !Object.is(lastProd, undefined) ? lastProd : getProduct(prodList, prId);
-        
-        let productDetails = null; // Assign the value of productDetails here
+
+        let productDetails = product.getDetails();
 
         rl.question(`You can buy - ${productDetails}.\n Do you want to buy this item <Y/N>? `.yellow, function (option) {
             const regexYes = null; // Use the RegExp built-in object type here as appropriate
