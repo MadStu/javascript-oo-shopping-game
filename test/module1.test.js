@@ -307,7 +307,7 @@ describe('Shopping Master game - Define object-types/classes', function () {
                     magProdNode.params[5].name  == 'isBonus'),
                     "Have you passed parameters `id`, `name`, `price`, `expiryDate`, `points` and `isBonus` in this order to the constructor function?");
 
-            //
+            //// testing
 
             const body = magProdNode.body.body;
             const bodyLength = body.length;
